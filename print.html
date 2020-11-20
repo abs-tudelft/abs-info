@@ -97,7 +97,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="chapter_1.html"><strong aria-hidden="true">1.</strong> Chapter 1</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="chapter_1.html"><strong aria-hidden="true">1.</strong> Chapter 1</a></li><li class="chapter-item expanded "><a href="general_information/index.html"><strong aria-hidden="true">2.</strong> General Information</a></li><li class="chapter-item expanded "><a href="general_information/links.html"><strong aria-hidden="true">3.</strong> Useful Links</a></li><li class="chapter-item expanded "><a href="general_information/finn_qce.html"><strong aria-hidden="true">4.</strong> FINN on qce-alveo01</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -170,6 +170,44 @@
                 <div id="content" class="content">
                     <main>
                         <h1><a class="header" href="#chapter-1" id="chapter-1">Chapter 1</a></h1>
+<h1><a class="header" href="#general-information" id="general-information">General Information</a></h1>
+<p>Here you can find general information for your work in the ABS team, no matter if you are an employee or student.</p>
+<h2><a class="header" href="#content" id="content">Content</a></h2>
+<ul>
+<li>
+<p><a href="general_information/links.html">Useful links</a></p>
+</li>
+<li>
+<p><a href="general_information/finn_qce.html">FINN on qce-alveo01</a></p>
+</li>
+</ul>
+<h1><a class="header" href="#useful-links" id="useful-links">Useful links</a></h1>
+<ul>
+<li>To start working on the qce servers please refer to: <a href="http://qce-it-infra.ewi.tudelft.nl/">Q&amp;CE Infrastructure Documentation</a></li>
+</ul>
+<h1><a class="header" href="#how-to-use-finn-on-qce-alveo01" id="how-to-use-finn-on-qce-alveo01">How to use FINN on qce-alveo01</a></h1>
+<h2><a class="header" href="#finn" id="finn">FINN</a></h2>
+<p>FINN is an open source experimental framework from Xilinx research labs, it allows the user to explore deep neural network inference on FPGAs. </p>
+<blockquote>
+<p>For information: <a href="https://finn.readthedocs.io/en/latest/">FINN documentation</a> and <a href="https://github.com/Xilinx/finn">FINN GitHub repository</a></p>
+</blockquote>
+<h2><a class="header" href="#setup-on-qce-alveo01" id="setup-on-qce-alveo01">Setup on qce-alveo01</a></h2>
+<p>The following explains how FINN can be used on the servers. Instead of Docker a pre-built singularity container for the master branch of FINN is used.</p>
+<h3><a class="header" href="#1-clone-necessary-repos" id="1-clone-necessary-repos">1. Clone necessary repos</a></h3>
+<ul>
+<li>
+<p>Clone all (or most relevant) dependency repos to your home directory</p>
+</li>
+<li>
+<p>e.g.</p>
+</li>
+</ul>
+<pre><code class="language-shell">mkdir repositories
+cd repositories
+git clone  https://github.com/Xilinx/finn.git
+git clone https://github.com/Xilinx/brevitas.git
+git clone https://github.com/Xilinx/finn-hlslib.git
+</code></pre>
 
                     </main>
 
