@@ -1,0 +1,9 @@
+[book]
+authors = ["Accelerated Big Data Systems"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Accelerated Big Data Systems - Delft University of Technology"
+
+[output.html]
+git-repository-url = "https://github.com/abs-tudelft/abs-info"
