@@ -97,7 +97,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="chapter_1.html"><strong aria-hidden="true">1.</strong> Chapter 1</a></li><li class="chapter-item expanded "><a href="general_information/index.html"><strong aria-hidden="true">2.</strong> General Information</a></li><li class="chapter-item expanded "><a href="general_information/links.html"><strong aria-hidden="true">3.</strong> Useful Links</a></li><li class="chapter-item expanded "><a href="general_information/finn_qce.html"><strong aria-hidden="true">4.</strong> FINN on qce-alveo01</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="chapter_1.html"><strong aria-hidden="true">1.</strong> Chapter 1</a></li><li class="chapter-item expanded "><a href="general_information/index.html"><strong aria-hidden="true">2.</strong> General Information</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="general_information/links.html"><strong aria-hidden="true">2.1.</strong> Useful Links</a></li><li class="chapter-item expanded "><a href="general_information/finn_qce.html"><strong aria-hidden="true">2.2.</strong> FINN on qce-alveo01</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -208,6 +208,73 @@ git clone  https://github.com/Xilinx/finn.git
 git clone https://github.com/Xilinx/brevitas.git
 git clone https://github.com/Xilinx/finn-hlslib.git
 </code></pre>
+<ul>
+<li>
+<p>You can find the necessary dependency repos <a href="https://github.com/Xilinx/finn/blob/e443a5859066a410a63c08dcfec4a90527ca24be/docker/Dockerfile.finn_dev#L73">here</a></p>
+</li>
+<li>
+<p>Checkout each repo the currently used git version, can be found <a href="https://github.com/Xilinx/finn/blob/e443a5859066a410a63c08dcfec4a90527ca24be/docker/finn_entrypoint.sh#L13">here</a></p>
+</li>
+</ul>
+<h3><a class="header" href="#2-open-container" id="2-open-container">2. Open container</a></h3>
+<ul>
+<li>
+<p>Use pre-build singularity container from /work/singularity/xilinx-finn.sif</p>
+</li>
+<li>
+<p>Bind own version of dependency repos to the container</p>
+</li>
+<li>
+<p>If you are in just created directory <em>repository</em>, execute this command with the folders you want to bind:</p>
+</li>
+</ul>
+<pre><code class="language-shell">Singularity shell --bind finn:/workspace/finn --bind finn-hlslib:/workspace/finn-hlslib [...] /work/singularity/xilinx-finn.sif
+</code></pre>
+<h3><a class="header" href="#3-inside-the-container" id="3-inside-the-container">3. Inside the container</a></h3>
+<ul>
+<li>You have to set all the desired env variables manually and brevitas has to be installed (or just write a shell script and execute it with <code>source ./set_env_var.sh</code>)</li>
+</ul>
+<pre><code class="language-shell">export VIVADO_PATH=&quot;/opt/apps/xilinx/Vivado/2020.1&quot;
+source $VIVADO_PATH/settings64.sh
+export VITIS_PATH=&quot;/opt/apps/xilinx/Vitis/2020.1&quot;
+source $VITIS_PATH/settings64.sh
+export PLATFORM_REPO_PATHS=&quot;/opt/xilinx/platforms&quot;
+export XILINX_XRT=&quot;/opt/xilinx/xrt&quot;
+export FINN_INST_NAME=&quot;finn_dev_[username]&quot;
+pip install --user -e /workspace/brevitas
+</code></pre>
+<ul>
+<li>Set env variable for your target device, for instance</li>
+</ul>
+<pre><code class="language-shell">export PYNQ_BOARD=&quot;Pynq-Z1&quot;
+´´´
+or
+´´´shell
+export ALVEO_BOARD=&quot;U50&quot;
+</code></pre>
+<ul>
+<li>Other environment variable settings that might be necessary can be found <a href="https://github.com/Xilinx/finn/blob/e443a5859066a410a63c08dcfec4a90527ca24be/run-docker.sh#L82">here</a></li>
+</ul>
+<h3><a class="header" href="#other-settings-and-remarks" id="other-settings-and-remarks">Other settings and remarks</a></h3>
+<ul>
+<li>
+<p>In a new terminal outside of the singularity container create a folder under /tmp/finn_dev_[username] because you will not have permission to create a folder from inside the container but this is where all the generated files from FINN are saved. As soon as this folder exists, the FINN compiler can save the produced files there</p>
+</li>
+<li>
+<p>VitisBuild cannot work in this singularity container because there is a mismatch of the xrt dependencies that are installed on the server and what would be needed inside the singularity container</p>
+</li>
+<li>
+<p>If you want to make a VitisBuild:</p>
+<ul>
+<li>Still execute VitisBuild inside the container because this will generate the necessary files and uses Vivado to synthesize the necessary parts</li>
+<li>When the build failed, use another terminal outside of the container, go into the vitis_link_[...] folder under /tmp/finn_dev_[username]</li>
+<li>Execute the bash script manually bash run_vitis_link.sh</li>
+</ul>
+</li>
+<li>
+<p>If you have questions, please write to: J.Petri-Koenig@tudelft.nl</p>
+</li>
+</ul>
 
                     </main>
 
