@@ -59,11 +59,11 @@ pip install --user -e /workspace/brevitas
 
 ```shell
 export PYNQ_BOARD="Pynq-Z1"
-´´´
+```
 
 or
 
-´´´shell
+```shell
 export ALVEO_BOARD="U50"
 ```
 

@@ -19,7 +19,7 @@ For the typical project that students can perform within ABS group, students wor
 
 2. Plan of Approach (Month 1 to 2)
 
-The project description given to the student must be clarified by the student into a Plan of Approach that includes:
+    The project description given to the student must be clarified by the student into a Plan of Approach that includes:
     
     - Thorough analysis and criticism of the project description based on literature study. **[Grading scheme: 1. research methods/design, 2. critical attitude]**
     - Reformulation of the problem statement, research questions and goals, based on the analysis. **[Grading scheme: 1. Scientific significance, 2. critical attitude, 3. content]**
@@ -28,11 +28,11 @@ The project description given to the student must be clarified by the student in
 
     - An initial project planning based on the list of objectives with time estimation. **[Grading scheme: 2. planning]**
 
-*Activities: 10 minute presentation of above deliverables at initiative of the student*
+    *Activities: 10 minute presentation of above deliverables at initiative of the student*
 
 3. Alternative solutions (Month 3)
 
-There are 2 possible general flavors for a project:
+    There are 2 possible general flavors for a project:
 
     - Design-oriented project
 
@@ -56,8 +56,8 @@ There are 2 possible general flavors for a project:
 
         - Discussion of abstraction levels (modeling, simulation) **[Grading scheme: 1. research methods/design, 2. creativity]**
 
-*Activities: 15 min mid-term presentation of above deliverables at initiative of the student.*
+    *Activities: 15 min mid-term presentation of above deliverables at initiative of the student.*
 
 4. Thesis committee form (Month 6)
 
-The student should agree with the supervisor on the composition of the thesis committee and submit the [thesis committee form](https://www.tudelft.nl/en/student/faculties/eemcs-student-portal/education/forms/msc-forms/) to the student administration. Check the regulations for choosing the committee members on the form.
+    The student should agree with the supervisor on the composition of the thesis committee and submit the [thesis committee form](https://www.tudelft.nl/en/student/faculties/eemcs-student-portal/education/forms/msc-forms/) to the student administration. Check the regulations for choosing the committee members on the form.
