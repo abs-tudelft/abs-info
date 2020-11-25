@@ -3,9 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Accelerated Big Data Systems - Delft University of Technology</title>
-        
-        <meta name="robots" content="noindex" />
+        <title>MSc thesis process guidelines - Accelerated Big Data Systems - Delft University of Technology</title>
         
         
 
@@ -20,28 +18,28 @@
         <meta name="theme-color" content="#ffffff" />
 
         
-        <link rel="icon" href="favicon.svg">
+        <link rel="icon" href="../favicon.svg">
         
         
-        <link rel="shortcut icon" href="favicon.png">
+        <link rel="shortcut icon" href="../favicon.png">
         
-        <link rel="stylesheet" href="css/variables.css">
-        <link rel="stylesheet" href="css/general.css">
-        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
         
-        <link rel="stylesheet" href="css/print.css" media="print">
+        <link rel="stylesheet" href="../css/print.css" media="print">
         
 
         <!-- Fonts -->
-        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
         
-        <link rel="stylesheet" href="fonts/fonts.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
         
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="highlight.css">
-        <link rel="stylesheet" href="tomorrow-night.css">
-        <link rel="stylesheet" href="ayu-highlight.css">
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
         
@@ -51,7 +49,7 @@
     <body>
         <!-- Provide site root to javascript -->
         <script type="text/javascript">
-            var path_to_root = "";
+            var path_to_root = "../";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
         </script>
 
@@ -97,7 +95,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="general_information/index.html"><strong aria-hidden="true">1.</strong> General Information</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="general_information/links.html"><strong aria-hidden="true">1.1.</strong> Useful Links</a></li><li class="chapter-item expanded "><a href="general_information/finn_qce.html"><strong aria-hidden="true">1.2.</strong> FINN on qce-alveo01</a></li></ol></li><li class="chapter-item expanded "><a href="students/index.html"><strong aria-hidden="true">2.</strong> Information for students</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="students/msc_project_process.html"><strong aria-hidden="true">2.1.</strong> MSc thesis process guidelines</a></li><li class="chapter-item expanded "><a href="students/msc_project_outline.html"><strong aria-hidden="true">2.2.</strong> MSc thesis outline</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../general_information/index.html"><strong aria-hidden="true">1.</strong> General Information</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../general_information/links.html"><strong aria-hidden="true">1.1.</strong> Useful Links</a></li><li class="chapter-item expanded "><a href="../general_information/finn_qce.html"><strong aria-hidden="true">1.2.</strong> FINN on qce-alveo01</a></li></ol></li><li class="chapter-item expanded "><a href="../students/index.html"><strong aria-hidden="true">2.</strong> Information for students</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../students/msc_project_process.html" class="active"><strong aria-hidden="true">2.1.</strong> MSc thesis process guidelines</a></li><li class="chapter-item expanded "><a href="../students/msc_project_outline.html"><strong aria-hidden="true">2.2.</strong> MSc thesis outline</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -133,7 +131,7 @@
 
                     <div class="right-buttons">
                         
-                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
                         
@@ -169,117 +167,7 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#general-information" id="general-information">General Information</a></h1>
-<p>Here you can find general information for your work in the ABS team, no matter if you are an employee or student.</p>
-<h2><a class="header" href="#content" id="content">Content</a></h2>
-<ul>
-<li>
-<p><a href="general_information/links.html">Useful links</a></p>
-</li>
-<li>
-<p><a href="general_information/finn_qce.html">FINN on qce-alveo01</a></p>
-</li>
-</ul>
-<h1><a class="header" href="#useful-links" id="useful-links">Useful links</a></h1>
-<ul>
-<li>To start working on the qce servers please refer to: <a href="http://qce-it-infra.ewi.tudelft.nl/">Q&amp;CE Infrastructure Documentation</a></li>
-</ul>
-<h1><a class="header" href="#how-to-use-finn-on-qce-alveo01" id="how-to-use-finn-on-qce-alveo01">How to use FINN on qce-alveo01</a></h1>
-<h2><a class="header" href="#finn" id="finn">FINN</a></h2>
-<p>FINN is an open source experimental framework from Xilinx research labs, it allows the user to explore deep neural network inference on FPGAs. </p>
-<blockquote>
-<p>For information: <a href="https://finn.readthedocs.io/en/latest/">FINN documentation</a> and <a href="https://github.com/Xilinx/finn">FINN GitHub repository</a></p>
-</blockquote>
-<h2><a class="header" href="#setup-on-qce-alveo01" id="setup-on-qce-alveo01">Setup on qce-alveo01</a></h2>
-<p>The following explains how FINN can be used on the servers. Instead of Docker a pre-built singularity container for the master branch of FINN is used.</p>
-<h3><a class="header" href="#1-clone-necessary-repos" id="1-clone-necessary-repos">1. Clone necessary repos</a></h3>
-<ul>
-<li>
-<p>Clone all (or most relevant) dependency repos to your home directory</p>
-</li>
-<li>
-<p>e.g.</p>
-</li>
-</ul>
-<pre><code class="language-shell">mkdir repositories
-cd repositories
-git clone  https://github.com/Xilinx/finn.git
-git clone https://github.com/Xilinx/brevitas.git
-git clone https://github.com/Xilinx/finn-hlslib.git
-</code></pre>
-<ul>
-<li>
-<p>You can find the necessary dependency repos <a href="https://github.com/Xilinx/finn/blob/e443a5859066a410a63c08dcfec4a90527ca24be/docker/Dockerfile.finn_dev#L73">here</a></p>
-</li>
-<li>
-<p>Checkout each repo the currently used git version, can be found <a href="https://github.com/Xilinx/finn/blob/e443a5859066a410a63c08dcfec4a90527ca24be/docker/finn_entrypoint.sh#L13">here</a></p>
-</li>
-</ul>
-<h3><a class="header" href="#2-open-container" id="2-open-container">2. Open container</a></h3>
-<ul>
-<li>
-<p>Use pre-build singularity container from /work/singularity/xilinx-finn.sif</p>
-</li>
-<li>
-<p>Bind own version of dependency repos to the container</p>
-</li>
-<li>
-<p>If you are in just created directory <em>repository</em>, execute this command with the folders you want to bind:</p>
-</li>
-</ul>
-<pre><code class="language-shell">Singularity shell --bind finn:/workspace/finn --bind finn-hlslib:/workspace/finn-hlslib [...] /work/singularity/xilinx-finn.sif
-</code></pre>
-<h3><a class="header" href="#3-inside-the-container" id="3-inside-the-container">3. Inside the container</a></h3>
-<ul>
-<li>You have to set all the desired env variables manually and brevitas has to be installed (or just write a shell script and execute it with <code>source ./set_env_var.sh</code>)</li>
-</ul>
-<pre><code class="language-shell">export VIVADO_PATH=&quot;/opt/apps/xilinx/Vivado/2020.1&quot;
-source $VIVADO_PATH/settings64.sh
-export VITIS_PATH=&quot;/opt/apps/xilinx/Vitis/2020.1&quot;
-source $VITIS_PATH/settings64.sh
-export PLATFORM_REPO_PATHS=&quot;/opt/xilinx/platforms&quot;
-export XILINX_XRT=&quot;/opt/xilinx/xrt&quot;
-export FINN_INST_NAME=&quot;finn_dev_[username]&quot;
-pip install --user -e /workspace/brevitas
-</code></pre>
-<ul>
-<li>Set env variable for your target device, for instance</li>
-</ul>
-<pre><code class="language-shell">export PYNQ_BOARD=&quot;Pynq-Z1&quot;
-</code></pre>
-<p>or</p>
-<pre><code class="language-shell">export ALVEO_BOARD=&quot;U50&quot;
-</code></pre>
-<ul>
-<li>Other environment variable settings that might be necessary can be found <a href="https://github.com/Xilinx/finn/blob/e443a5859066a410a63c08dcfec4a90527ca24be/run-docker.sh#L82">here</a></li>
-</ul>
-<h3><a class="header" href="#other-settings-and-remarks" id="other-settings-and-remarks">Other settings and remarks</a></h3>
-<ul>
-<li>
-<p>In a new terminal outside of the singularity container create a folder under /tmp/finn_dev_[username] because you will not have permission to create a folder from inside the container but this is where all the generated files from FINN are saved. As soon as this folder exists, the FINN compiler can save the produced files there</p>
-</li>
-<li>
-<p>VitisBuild cannot work in this singularity container because there is a mismatch of the xrt dependencies that are installed on the server and what would be needed inside the singularity container</p>
-</li>
-<li>
-<p>If you want to make a VitisBuild:</p>
-<ul>
-<li>Still execute VitisBuild inside the container because this will generate the necessary files and uses Vivado to synthesize the necessary parts</li>
-<li>When the build failed, use another terminal outside of the container, go into the vitis_link_[...] folder under /tmp/finn_dev_[username]</li>
-<li>Execute the bash script manually bash run_vitis_link.sh</li>
-</ul>
-</li>
-<li>
-<p>If you have questions, please write to: J.Petri-Koenig@tudelft.nl</p>
-</li>
-</ul>
-<h1><a class="header" href="#information-for-students" id="information-for-students">Information for students</a></h1>
-<p>Here you can find information for your work in the ABS team, specifically for students.</p>
-<h2><a class="header" href="#content-1" id="content-1">Content</a></h2>
-<ul>
-<li><a href="students/msc_project_process.html">MSc thesis process guidelines</a></li>
-</ul>
-<h1><a class="header" href="#msc-thesis-process-guidelines" id="msc-thesis-process-guidelines">MSc thesis process guidelines</a></h1>
+                        <h1><a class="header" href="#msc-thesis-process-guidelines" id="msc-thesis-process-guidelines">MSc thesis process guidelines</a></h1>
 <blockquote>
 <p>Note: This document does not replace or supersedes any documentation produced by EEMCS or TU Delft, but merely explains them slightly more specific to the context of the projects withing the ABS group. In case of doubt, the documentation of EEMCS is leading.</p>
 </blockquote>
@@ -378,7 +266,7 @@ The grading scheme is available <a href="https://www.tudelft.nl/en/student/facul
 <p>The thesis document is the showcase of your work, and the only thing some of the committee members will see (with the presentation).</p>
 <ul>
 <li>
-<p>The student should agree on an outline for the thesis with the supervisors before writing. Use the <a href="students/msc_project_outline.html">outline</a> as an example. <strong>[Grading scheme: 2. initiative, 2. interaction with peers/supervisors, 3. all]</strong></p>
+<p>The student should agree on an outline for the thesis with the supervisors before writing. Use the <a href="msc_project_outline.html">outline</a> as an example. <strong>[Grading scheme: 2. initiative, 2. interaction with peers/supervisors, 3. all]</strong></p>
 </li>
 <li>
 <p>The aforementioned deliverables can be combined to form the thesis. The student writes the thesis text in such a way that it forms a coherent story. It is recommend to use the <a href="https://web.archive.org/web/20170928084822/https://www.unbc.ca/sites/default/files/assets/academic_success_centre/writing_support/hourglass.pdf">hourglass model</a> to construct the final version of the thesis. <strong>[Grading scheme: 3. all]</strong></p>
@@ -406,8 +294,8 @@ The grading scheme is available <a href="https://www.tudelft.nl/en/student/facul
 </li>
 </ol>
 <table><thead><tr><th>Month</th><th>Task</th><th>Additional remarks</th></tr></thead><tbody>
-<tr><td>Month 0</td><td>TEP</td><td><em>Contact Trisha de Jonge <a href="mailto:students/T.deJonge-1@tudelft.nl">T.deJonge-1@tudelft.nl</a> to register as an MSc student in our group</em></td></tr>
-<tr><td>Month 1</td><td>Plan of Approach</td><td><em>Contact Erik de Vries <a href="mailto:students/e.devries@tudelft.nl">e.devries@tudelft.nl</a> to get access to our compute systems</em></td></tr>
+<tr><td>Month 0</td><td>TEP</td><td><em>Contact Trisha de Jonge <a href="mailto:T.deJonge-1@tudelft.nl">T.deJonge-1@tudelft.nl</a> to register as an MSc student in our group</em></td></tr>
+<tr><td>Month 1</td><td>Plan of Approach</td><td><em>Contact Erik de Vries <a href="mailto:e.devries@tudelft.nl">e.devries@tudelft.nl</a> to get access to our compute systems</em></td></tr>
 <tr><td>Month 3</td><td>Alternative Solutions</td><td></td></tr>
 <tr><td>Month 6</td><td>Thesis comittee form</td><td></td></tr>
 <tr><td>Month 7</td><td>Implementation and results</td><td></td></tr>
@@ -415,55 +303,21 @@ The grading scheme is available <a href="https://www.tudelft.nl/en/student/facul
 <tr><td>1 week to end</td><td>Presentation and thesis upload</td><td></td></tr>
 </tbody></table>
 <p><em>After graduation, contact Trisha de Jonge and Erik de Vries to end your registration in the group.</em></p>
-<h1><a class="header" href="#typical-msc-thesis-outline" id="typical-msc-thesis-outline">Typical MSc thesis outline</a></h1>
-<h2><a class="header" href="#important-remarks" id="important-remarks">Important remarks</a></h2>
-<ul>
-<li>
-<p>All chapter/section header, contents of tables/figures should have sentence capitalization (only first word of a sentence is capital).</p>
-</li>
-<li>
-<p>When referring to a specific figure, table, etc. by number, capitalize that word (Figure 1, Table 3, Page 5)</p>
-</li>
-<li>
-<p>If there is a Section 1.1, then there must be Section 1.2. A list of one item is not a list!</p>
-</li>
-<li>
-<p>Export all plots and diagrams as vectorized PDF. This ensures high quality figures with small file size. If you must use bit mapped pictures (e.g. png, jpg), limit resolution to 300ppi.</p>
-</li>
-</ul>
-<h2><a class="header" href="#1-introduction" id="1-introduction">1. Introduction</a></h2>
-<p>1.1. Context (what is the project, where is it being carried out, how will this research have impact on the world)</p>
-<p>1.2. Challenges (what is the general problem and what are the possible challenges to solving it)</p>
-<p>1.3. Problem statement and research questions</p>
-<p>1.4. Thesis outline</p>
-<h2><a class="header" href="#2-background" id="2-background">2. Background</a></h2>
-<p>Based on detailed analysis of the problem, discuss the various concepts related to the project that need more in-depth knowledge to understand the solution.</p>
-<h2><a class="header" href="#3-alternative-solutions" id="3-alternative-solutions">3. Alternative solutions</a></h2>
-<p>Start this chapter with a figure of a tree to classify the alternative solutions into classes</p>
-<p align="center">
-  <img src="https://github.com/abs-tudelft/abs-info/blob/main/src/students/alternative_solutions.PNG" width="356" title="Alternative solutions">
-</p>
-<p>3.1. Solution class 1 (discuss the solutions in this class)</p>
-<p>3.2. Solution class 2 (discuss the solutions in this class)</p>
-<p>3.3. Solution comparison (create table to compare the solutions qualitatively (using ++ and --) or quantitatively (using numbers) to choose the appropriate solution to implement)</p>
-<h2><a class="header" href="#4-implementation" id="4-implementation">4. Implementation</a></h2>
-<p>Here you implement the most appropriate solution chosen in Section 3.3.</p>
-<p>4.1. Architectural details</p>
-<p>4.2. Implementation of components</p>
-<p>4.3. ..</p>
-<h2><a class="header" href="#5-measurement-results" id="5-measurement-results">5. Measurement results</a></h2>
-<p>5.1. Experimental setup (specs of systems you ran the experiments on, software stack used, datasets used if any, etc. The reader should be able to reproduce the results. Upload your code to a git repo and put a link to it in the text).</p>
-<p>5.2. Multiple sections with results and discussion. Make sure to include an elaborate set of measurements to quantify e.g., the performance, bandwidth, accuracy, area, power, efficiency, etc. Perform these measurements not as a single point, but do measurements for a range of a number of design implementation parameters e.g., range of buffer sizes, range of input sizes, range of accuracy targets, scalability on multiple nodes, etc. The captions of the results figures should identify the experiment parameters different from other figures. Use markers, patterns and texture (not only color) to differentiate between multiple curves or bars in a figure. Don’t refer to colors in the text (10% of people are color blind)!</p>
-<h2><a class="header" href="#6-conclusions-and-recommendations" id="6-conclusions-and-recommendations">6. Conclusions and recommendations</a></h2>
-<p>6.1. Conclusions (re-state each research question from the introduction and discuss how you answered it in the thesis. The conclusions should not be new material, rather all conclusions should have been discussed in the thesis already in more detailed form)</p>
-<p>6.2. Recommendations</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
                         
+                            <a rel="prev" href="../students/index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
 
+                        
+                            <a rel="next" href="../students/msc_project_outline.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
                         
 
                         <div style="clear: both"></div>
@@ -473,7 +327,15 @@ The grading scheme is available <a href="https://www.tudelft.nl/en/student/facul
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                 
+                    <a rel="prev" href="../students/index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
 
+                
+                    <a rel="next" href="../students/msc_project_outline.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
                 
             </nav>
 
@@ -494,26 +356,18 @@ The grading scheme is available <a href="https://www.tudelft.nl/en/student/facul
         
 
         
-        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
         
 
-        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
-        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
 
         <!-- Custom JS scripts -->
         
 
-        
-        
-        <script type="text/javascript">
-        window.addEventListener('load', function() {
-            window.setTimeout(window.print, 100);
-        });
-        </script>
-        
         
 
     </body>
