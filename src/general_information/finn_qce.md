@@ -1,5 +1,7 @@
 # How to use FINN on qce-alveo01
 
+Before you use FINN on qce-alveo01 check with `top` if someone else is using the server and discuss with the people whether you can start your experiments. FINN uses Vivado and Vitis and can use a lot of resources.
+
 ## FINN
 
 FINN is an open source experimental framework from Xilinx research labs, it allows the user to explore deep neural network inference on FPGAs. 
