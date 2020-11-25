@@ -6,3 +6,4 @@ Content
 -------
 
 - [MSc thesis process guidelines](msc_project_process.md)
+- [MSc thesis outline](msc_project_outline.md)
