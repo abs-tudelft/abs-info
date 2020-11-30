@@ -39,7 +39,7 @@ git clone https://github.com/Xilinx/finn-hlslib.git
 - If you are in just created directory *repository*, execute this command with the folders you want to bind:
 
 ```shell
-Singularity shell --bind finn:/workspace/finn --bind finn-hlslib:/workspace/finn-hlslib [...] /work/singularity/xilinx-finn.sif
+singularity shell --bind finn:/workspace/finn --bind finn-hlslib:/workspace/finn-hlslib [...] /work/singularity/xilinx-finn.sif
 ```
 
 ### 3. Inside the container
